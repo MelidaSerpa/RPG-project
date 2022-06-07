@@ -1,0 +1,33 @@
+Program flow:
+
+
+NorthLand (Search for a fun font)
+
+Press Enter to start.
+
+Guten Tag Kermit!, 
+Another day in northland, another coin. Since last night you expent all your money in beer and h*es, there's no money to survive the week, so get up warrior!, it's time to work.
+
+Press Enter to continue
+
+There are a some posters on the town board with missions, maybe you can take a look on them and see what's good.
+
+Press Enter to see posters
+
+1. Mutant elephant - wanted - reward: 50 gold coins
+   Kermit: "Uhhhh this loot be juicy 7u7"
+
+#
+Help mrs. Patty get some milk for the town children: 20 silver coins
+   Kermit: "I mean, it's mostly to help but..... that shit ain't enough to get my foo'!"
+
+#
+Wild rats plague: 5 gold coin 
+   Kermit: "This is decent for an easy job but I ain't taking it"
+
+Press Enter to start mission 
+
+Kermit1: "Let's go hommie, we got a mf Elephant to kill"
+
+#Kermit2: "It ain't much but is honest work"
+#Kermit3: "Disgusting rats *Spits*, your time has come ugly ass rats"
