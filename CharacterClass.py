@@ -49,3 +49,5 @@ class CharacterClass:
         if SelAtt == "Sin Purifier":
             DmgNun = 24
         return("Blading Elephant attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
+
+    

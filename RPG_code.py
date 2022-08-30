@@ -5,8 +5,43 @@ from CharacterClass import CharacterClass
 kermit = CharacterClass("Kermit The Warrior", 150, 1)
 elephant = CharacterClass("Blading Elephant", 500, 1)
 
-def Info(self):
-        return("Kermit stats: \n" + "Hp: " + str(Kermit.life) + "\n" + "Action Count :" + str(Kermit.numOfatt))    
+def Info():
+    print("Blading Elephant stats: \n" + "Hp: " + str(elephant.life) + "\n")
+    print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Action Count :" + str(kermit.numOfAtt))
+    return
+
+bossF2Death = False
+kermitDeath = False
+
+print("NORTHLAND \n")
+print("")
+input("Press Enter to Start \n")
+print("Guten Tag Kermit!, \n Another day in northland, another coin. Since last night you spent all your money in beer and h*es,")
+print("there's no money to survive the week, so get up warrior!, it's time to work.\n")
+input("Press Enter to continue \n")
+print("There are a some posters on the town board with missions,")
+print("maybe you can take a look on them and see what's good.\n")
+input("Press Enter to see posters \n")
+print("Mutant elephant - wanted - reward: 50 gold coins \n")
+print("Kermit: \"Uhhhh this loot be juicy 7u7\"\n")
+input("Press Enter to start mission \n")
+print("")
+print("Kermit1: \"Let's go hommie, we got a mf Elephant to kill\" \n")
+print("...")
+print("...")
+print("...")
+input("Press Enter to continue \n")
+print("Kermit: Alright, here's the mf \n")
+print("Elephant *serious stare*\n")
+print("...")
+print("Kermit: It looks like we got him taking a dump.... such a shameful way to start a battle :Worried-face:")
+
+
+
+
+
+while bossF2Death or kermitDeath == True:
+    pass
 
 #Boss atributtes
 
