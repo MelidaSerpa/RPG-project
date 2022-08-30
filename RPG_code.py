@@ -40,7 +40,7 @@ print("Kermit: It looks like we got him taking a dump.... such a shameful way to
 
 
 
-while bossF2Death or kermitDeath == True:
+while bossF2Death == True or kermitDeath == True:
     pass
 
 #Boss atributtes

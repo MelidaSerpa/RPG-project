@@ -42,3 +42,7 @@ Kermit (Life 150): Let's start with an attack
 3-"Machine gun" - dmg 35 → C
 
 Type the attack: |
+
+
+
+INTENTA IMPLEMENTAR CONTADORES!!!!!!!!
