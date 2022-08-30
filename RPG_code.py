@@ -3,7 +3,10 @@ import random
 from CharacterClass import CharacterClass
 
 kermit = CharacterClass("Kermit The Warrior", 150, 1)
-elephant = CharacterClass("Blading Elephant", 250, 1)
+elephant = CharacterClass("Blading Elephant", 500, 1)
+
+def Info(self):
+        return("Kermit stats: \n" + "Hp: " + str(Kermit.life) + "\n" + "Action Count :" + str(Kermit.numOfatt))    
 
 #Boss atributtes
 
@@ -23,7 +26,7 @@ elephant = CharacterClass("Blading Elephant", 250, 1)
 #especial_attack = "Sexy smirk"
 #especial_attack = random.radint(0,100)
 
-print(elephant.bossAtt())
+
 
 
 
