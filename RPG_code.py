@@ -10,6 +10,12 @@ def Info():
     print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Action Count :" + str(kermit.numOfAtt))
     return
 
+#Kermit dialogue when receiving and giving attack
+kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮"]
+kDGS = random.choice(kermitDialGi)
+kDR = ["Agh!", "Auchi", ">:/", "ah! 😳", "Ughh 🐡", "Damm hommie, calm the fuck down >:/", "Ha!, jokes on you I'm into that shit!"]
+kDRS = random.choice(kermitDialRe)
+
 bossF2Death = False
 kermitDeath = False
 
@@ -36,12 +42,16 @@ print("Elephant *serious stare*\n")
 print("...")
 print("Kermit: It looks like we got him taking a dump.... such a shameful way to start a battle :Worried-face:")
 
-
+print("Kermit : \"Let's initiate with an attack\"")
 
 
 
 while bossF2Death == True or kermitDeath == True:
-    pass
+    print()
+    print()
+    print()
+    
+    print("Kermit: " + )
 
 #Boss atributtes
 
