@@ -7,17 +7,18 @@ elephant = CharacterClass("Blading Elephant", 500, 1)
 
 def Info():
     print("Blading Elephant stats: \n" + "Hp: " + str(elephant.life) + "\n")
-    print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Action Count :" + str(kermit.numOfAtt))
-    return
+    print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Actions Count :" + str(kermit.numOfAtt))
+    return("")
 
 #Kermit dialogue when receiving and giving attack
 kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮"]
-kDGS = random.choice(kermitDialGi)
+kDGS = random.choice(kDG)
 kDR = ["Agh!", "Auchi", ">:/", "ah! 😳", "Ughh 🐡", "Damm hommie, calm the fuck down >:/", "Ha!, jokes on you I'm into that shit!"]
-kDRS = random.choice(kermitDialRe)
+kDRS = random.choice(kDR)
 
-bossF2Death = False
-kermitDeath = False
+#Potions given to kermit when "turn4" times
+turn4 = 3
+i = 0
 
 print("NORTHLAND \n")
 print("")
@@ -46,12 +47,15 @@ print("Kermit : \"Let's initiate with an attack\"")
 
 
 
-while bossF2Death == True or kermitDeath == True:
-    print()
-    print()
-    print()
-    
-    print("Kermit: " + )
+while elephant.life <= 0 or kermit.life <= 0:
+    SelAtt = ""
+    print("\"Ak 47\"- Dmg 30 → A\n")
+    print("\"Slap\"- Dmg 22 → B \n")
+    print("\"Rubber Hen\" - Dmg 45 → C\n")
+    SelAtt = input("Type the related letter to the attack (A, B or C): \n")
+    SelAtt = SelAtt.upper()
+    if SelAtt == "A":
+        pass
 
 #Boss atributtes
 
