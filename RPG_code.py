@@ -23,11 +23,33 @@ def UserAtt(SelAtt, DmgNun):
         DmgNun = 45
     return("You attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
 
+def bossAttFase1():
+        boss_attacks = ["Body Blast","Acid Blow","Laser Hands","Sin Purifier"]
+        SelAtt = random.choice(boss_attacks)
+        DmgNun = 0
+        failed_attack =  random.randint(0,100)
+        
+        if failed_attack >= 95:
+            SelAtt = "Failed Attack"
+            DmgNun = 0
+        if SelAtt == "Body Blast":
+            DmgNun = 25
+        if SelAtt == "Acid Blow":
+            DmgNun = 20
+        if SelAtt == "Laser Hands":
+            DmgNun = 15
+        if SelAtt == "Sin Purifier":
+            DmgNun = 12
+        return("Blading Elephant attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
+
 #Kermit dialogue when receiving and giving attack
-kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮"]
+kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮", "Mf is getting horny 🤢"]
 kDGS = random.choice(kDG)
-kDR = ["Agh!", "Auchi", ">:/", "ah! 😳", "Ughh 🐡", "Damm hommie, calm the fuck down >:/", "Ha!, jokes on you I'm into that shit!"]
+kDR = ["Agh!", "Auchi", ">:/", "ah! 😳", "Ughh 🐡", "Damm hommie, calm the fuck down >:/"]
 kDRS = random.choice(kDR)
+
+EDR = ["uh! :excited:", "Ricooo", "More papi", "stronger!!"]
+EDRS = random.choice(EDR)
 
 #Potions given to kermit when "turn4" times
 turn4 = 3
@@ -57,18 +79,25 @@ print("...")
 print("Kermit: It looks like we got him taking a dump.... such a shameful way to start a battle 😟\n")
 
 print("Kermit : \"Let's initiate with an attack\" \n")
-
+print(Info())
 
 
 while elephant.life >= 0 or kermit.life >= 0:
     SelAtt = ""
     DmgNun = 0
-    print("\"Ak 47\"- Dmg 30 → A\n")
-    print("\"Slap\"- Dmg 22 → B \n")
+    print("\"Ak 47\"- Dmg 30 → A")
+    print("\"Slap\"- Dmg 22 → B ")
     print("\"Rubber Hen\" - Dmg 45 → C\n")
-    SelAtt = input("Type the related letter to the attack (A, B or C): \n")
+    SelAtt = input("Type the related letter to the attack (A, B or C): ")
     SelAtt = SelAtt.upper()
+    print("\n")
+    print("Blading Elephant: " + EDRS + "\n")
     print(UserAtt(SelAtt, DmgNun) + "\n")
+    elephant.life - DmgNun
+    print(Info())
+    print("Blading Elephant turn: \n")
+    print(bossAttFase1())
+
 
 
 #Boss atributtes
