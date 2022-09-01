@@ -5,6 +5,7 @@ from CharacterClass import CharacterClass
 kermit = CharacterClass("Kermit The Warrior", 150, 1)
 elephant = CharacterClass("Blading Elephant", 500, 1)
 
+
 def Info():
     print("Blading Elephant stats: \n" + "Hp: " + str(elephant.life) + "\n")
     print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Actions Count :" + str(kermit.numOfAtt))
@@ -54,8 +55,8 @@ while elephant.life <= 0 or kermit.life <= 0:
     print("\"Rubber Hen\" - Dmg 45 → C\n")
     SelAtt = input("Type the related letter to the attack (A, B or C): \n")
     SelAtt = SelAtt.upper()
-    if SelAtt == "A":
-        pass
+    print(UserAtt() + "\n")
+
 
 #Boss atributtes
 

@@ -50,7 +50,7 @@ class CharacterClass:
             DmgNun = 24
         return("Blading Elephant attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
 
-    def UserAtt(self, SelAtt):
+    def UserAtt(self):
         SelAtt = ""
         DmgNun = 0
         
