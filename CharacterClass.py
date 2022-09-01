@@ -49,18 +49,3 @@ class CharacterClass:
         if SelAtt == "Sin Purifier":
             DmgNun = 24
         return("Blading Elephant attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
-
-    def UserAtt(self):
-        SelAtt = ""
-        DmgNun = 0
-        
-        if SelAtt == "A":
-            SelAtt = "Ak 47"
-            DmgNun = 30
-        if SelAtt == "B":
-            SelAtt = "Slap"
-            DmgNun = 22
-        if SelAtt == "C":
-            SelAtt = "Rubber Hen"
-            DmgNun = 45
-        return("You attacked with: " + SelAtt + " Dmg: " + str(DmgNun))

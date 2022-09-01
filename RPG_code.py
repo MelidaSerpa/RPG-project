@@ -11,6 +11,18 @@ def Info():
     print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Actions Count :" + str(kermit.numOfAtt))
     return("")
 
+def UserAtt(SelAtt, DmgNun):
+    if SelAtt == "A":
+        SelAtt = "Ak 47"
+        DmgNun = 30
+    if SelAtt == "B":
+         SelAtt = "Slap"
+         DmgNun = 22
+    if SelAtt == "C":
+        SelAtt = "Rubber Hen"
+        DmgNun = 45
+    return("You attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
+
 #Kermit dialogue when receiving and giving attack
 kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮"]
 kDGS = random.choice(kDG)
@@ -31,31 +43,32 @@ print("There are a some posters on the town board with missions,")
 print("maybe you can take a look on them and see what's good.\n")
 input("Press Enter to see posters \n")
 print("Mutant elephant - wanted - reward: 50 gold coins \n")
-print("Kermit: \"Uhhhh this loot be juicy 7u7\"\n")
+print("Kermit: \"Uhhhh this loot be juicy 😏\"\n")
 input("Press Enter to start mission \n")
 print("")
-print("Kermit1: \"Let's go hommie, we got a mf Elephant to kill\" \n")
+print("Kermit1: \"Let's go hommie, we got a mf Elephant to kill\"\n")
 print("...")
 print("...")
-print("...")
+print("...\n")
 input("Press Enter to continue \n")
 print("Kermit: Alright, here's the mf \n")
-print("Elephant *serious stare*\n")
+print("Elephant *serious stare*")
 print("...")
-print("Kermit: It looks like we got him taking a dump.... such a shameful way to start a battle :Worried-face:")
+print("Kermit: It looks like we got him taking a dump.... such a shameful way to start a battle 😟\n")
 
-print("Kermit : \"Let's initiate with an attack\"")
+print("Kermit : \"Let's initiate with an attack\" \n")
 
 
 
-while elephant.life <= 0 or kermit.life <= 0:
+while elephant.life >= 0 or kermit.life >= 0:
     SelAtt = ""
+    DmgNun = 0
     print("\"Ak 47\"- Dmg 30 → A\n")
     print("\"Slap\"- Dmg 22 → B \n")
     print("\"Rubber Hen\" - Dmg 45 → C\n")
     SelAtt = input("Type the related letter to the attack (A, B or C): \n")
     SelAtt = SelAtt.upper()
-    print(UserAtt() + "\n")
+    print(UserAtt(SelAtt, DmgNun) + "\n")
 
 
 #Boss atributtes
