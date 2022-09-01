@@ -1,4 +1,9 @@
 # RPG-project
+
+Assignment: 
+Elabore un programa/videojuego de texto con mecánicas de combates por turnos, el juego debe llevar un combate con un jefe que maneje más de 4 ataques y dos fases, los ataques del jefe deben de realizarse de manera aleatoria pero ciertos ataques deben tener más posibilidades de realizarse, el jugador también debe tener su moveset de ataques adicional a esto debe tener 3 pociones para curarse y la opción de huir la cual sería exitosa dependiendo de la cantidad de vida del jefe, por último el juego debe tener al menos 2 easter eggs. (ง'̀-'́)ง
+
+# Characters and attributes
 RPG game about warrior Kermit the frog in Northland.
 
 Characters:
