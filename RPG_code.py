@@ -1,6 +1,7 @@
 import math
 import random
 from CharacterClass import CharacterClass
+from ANSI import ANSI
 
 kermit = CharacterClass("Kermit The Warrior", 150, 1)
 elephant = CharacterClass("Blading Elephant", 500, 1)
@@ -42,6 +43,9 @@ def bossAttFase1():
             DmgNun = 12
         return("Blading Elephant attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
 
+#Title color
+ANSI = ANSI.background(0) + ANSI.color_text(49) + ANSI.style_text(31) + "Kermit The Warrior in Northland"
+
 #Kermit dialogue when receiving and giving attack
 kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮", "Mf is getting horny 🤢"]
 kDGS = random.choice(kDG)
@@ -55,7 +59,7 @@ EDRS = random.choice(EDR)
 turn4 = 3
 i = 0
 
-print("NORTHLAND \n")
+print(title)
 print("")
 input("Press Enter to Start \n")
 print("Guten Tag Kermit!, \n Another day in northland, another coin. Since last night you spent all your money in beer and h*es,")
