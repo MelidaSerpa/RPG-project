@@ -11,7 +11,7 @@ class CharacterClass:
         self.life = life
         self.numOfAtt = numOfatt
 
-    def bossAttFase2(self):
+    def bossAttFase2(self, DmgNun):
         boss_attacks = ["Body Blast","Acid Blow","Laser Hands","Sin Purifier"]
         SelAtt = random.choice(boss_attacks)
         DmgNun = 0

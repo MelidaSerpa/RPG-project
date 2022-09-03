@@ -106,9 +106,9 @@ while elephant.life >= 0 or kermit.life >= 0:
     print(EInfo())
     print("Blading Elephant turn: \n")
     print("Kermit: " + kDRS + "\n")
-    print(bossAttFase1())
+    print(bossAttFase1(SelAtt, DmgNun) + "\n")
     kermit.life = kermit.life - DmgNun
-    
+    print(KInfo())
 
 
 #Boss atributtes
