@@ -6,10 +6,12 @@ from ANSI import ANSI
 kermit = CharacterClass("Kermit The Warrior", 150, 1)
 elephant = CharacterClass("Blading Elephant", 500, 1)
 
-
-def Info():
-    print("Blading Elephant stats: \n" + "Hp: " + str(elephant.life) + "\n")
+def KInfo():
     print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Actions Count :" + str(kermit.numOfAtt))
+    return("")
+
+def EInfo():
+    print("Blading Elephant stats: \n" + "Hp: " + str(elephant.life) + "\n")
     return("")
 
 def UserAtt(SelAtt, DmgNun):
@@ -59,7 +61,7 @@ EDRS = random.choice(EDR)
 turn4 = 3
 i = 0
 
-print(title)
+print(ANSI)
 print("")
 input("Press Enter to Start \n")
 print("Guten Tag Kermit!, \n Another day in northland, another coin. Since last night you spent all your money in beer and h*es,")
@@ -89,19 +91,24 @@ print(Info())
 while elephant.life >= 0 or kermit.life >= 0:
     SelAtt = ""
     DmgNun = 0
+    print("\n")
+    print(KInfo())
+    print("Type the related letter to the attack (A, B or C): ")
     print("\"Ak 47\"- Dmg 30 → A")
     print("\"Slap\"- Dmg 22 → B ")
     print("\"Rubber Hen\" - Dmg 45 → C\n")
-    SelAtt = input("Type the related letter to the attack (A, B or C): ")
+    SelAtt = input("Type bar: ")
     SelAtt = SelAtt.upper()
     print("\n")
     print("Blading Elephant: " + EDRS + "\n")
     print(UserAtt(SelAtt, DmgNun) + "\n")
-    elephant.life - DmgNun
-    print(Info())
+    elephant.life = elephant.life - DmgNun
+    print(EInfo())
     print("Blading Elephant turn: \n")
+    print("Kermit: " + kDRS + "\n")
     print(bossAttFase1())
-
+    kermit.life = kermit.life - DmgNun
+    
 
 
 #Boss atributtes
