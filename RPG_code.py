@@ -1,18 +1,19 @@
 import math
 import random
-from CharacterClass import CharacterClass
+from PlayerClass import PlayerClass
+from AiPlayer import AiPlayer
+from enum import Enum
 from ANSI import ANSI
 
-kermit = CharacterClass("Kermit The Warrior", 150, 1)
-elephant = CharacterClass("Blading Elephant", 500, 1)
+kermit = PlayerClass("Kermit The Warrior", 150, 3)
+elephant = AiPlayer("Blading Elephant", 500, 3)
 
-def KInfo():
-    print("Kermit stats: \n" + "Hp: " + str(kermit.life) + "\n" + "Actions Count :" + str(kermit.numOfAtt))
-    return("")
+#BOSS ATTACKS
+Bweapons = Enum("Bweapons","Body Blast","Acid Blow","Laser Hands","Sin Purifier")
+#USER ATTACKS
+Uweapons = Enum("Uweapons","Ak 47","Slap","Machine gun")
 
-def EInfo():
-    print("Blading Elephant stats: \n" + "Hp: " + str(elephant.life) + "\n")
-    return("")
+
 
 def UserAtt(SelAtt, DmgNun):
     if SelAtt == "A":
@@ -27,8 +28,7 @@ def UserAtt(SelAtt, DmgNun):
     return("You attacked with: " + SelAtt + " Dmg: " + str(DmgNun))
 
 def bossAttFase1():
-        boss_attacks = ["Body Blast","Acid Blow","Laser Hands","Sin Purifier"]
-        SelAtt = random.choice(boss_attacks)
+        
         DmgNun = 0
         failed_attack =  random.randint(0,100)
         
@@ -85,14 +85,14 @@ print("...")
 print("Kermit: It looks like we got him taking a dump.... such a shameful way to start a battle 😟\n")
 
 print("Kermit : \"Let's initiate with an attack\" \n")
-print(Info())
+print()
 
 
 while elephant.life >= 0 or kermit.life >= 0:
     SelAtt = ""
     DmgNun = 0
     print("\n")
-    print(KInfo())
+    print()
     print("Type the related letter to the attack (A, B or C): ")
     print("\"Ak 47\"- Dmg 30 → A")
     print("\"Slap\"- Dmg 22 → B ")
@@ -103,12 +103,12 @@ while elephant.life >= 0 or kermit.life >= 0:
     print("Blading Elephant: " + EDRS + "\n")
     print(UserAtt(SelAtt, DmgNun) + "\n")
     elephant.life = elephant.life - DmgNun
-    print(EInfo())
+    print()
     print("Blading Elephant turn: \n")
     print("Kermit: " + kDRS + "\n")
     print(bossAttFase1(SelAtt, DmgNun) + "\n")
     kermit.life = kermit.life - DmgNun
-    print(KInfo())
+    print()
 
 
 #Boss atributtes
