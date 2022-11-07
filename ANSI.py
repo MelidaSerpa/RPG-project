@@ -1,4 +1,5 @@
 class ANSI():
+    
     def background(code):
         return "\33[{code}m".format(code=code)
   

@@ -1,12 +1,10 @@
 import math
 import random
-from PlayerClass import PlayerClass
-from AiPlayer import AiPlayer
 from enum import Enum
 from ANSI import ANSI
 
-kermit = PlayerClass("Kermit The Warrior", 150, 3)
-elephant = AiPlayer("Blading Elephant", 500, 3)
+kermit = 0
+elephant = 0
 
 #BOSS ATTACKS
 Bweapons = Enum("Bweapons","Body Blast","Acid Blow","Laser Hands","Sin Purifier")
