@@ -24,14 +24,7 @@ boss = {'name' : 'Blading Elephant',
 #Title
 Title = ANSI.background(0) + ANSI.color_text(49) + ANSI.style_text(31) + "Kermit The Warrior in Northland"
 
-#Kermit dialogue when receiving and giving attack
-kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮", "Mf is getting horny 🤢"]
-kDGS = random.choice(kDG)
-kDR = ["Agh!", "Auchi", ">:/", "ah! 😳", "Ughh 🐡", "Damm hommie, calm the fuck down >:/"]
-kDRS = random.choice(kDR)
 
-EDR = ["uh! :excited:", "Ricooo", "More papi", "stronger!!"]
-EDRS = random.choice(EDR)
 
 def takeDmg(attacker, defender):
     dmg = randint(attacker['stats']['attacks'][0], attacker['stats']['attacks'][1])
@@ -46,6 +39,17 @@ def takeDmg(attacker, defender):
         
 def commands(player, enemy):
     while True:
+        #-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #Kermit dialogue when receiving and giving attack
+        kDG = ["Come on with the come on!", "Let's go!,", "Mf tough", ":o", "Messi 🤢", "stay focused, stay committed 🧐👹", "Entomuymal 🤮", "Mf is getting horny 🤢"]
+        kDGS = random.choice(kDG)
+        kDR = ["Agh!", "Auchi", ">:/", "ah! 😳", "Ughh 🐡", "Damm hommie, calm the fuck down >:/"]
+        kDRS = random.choice(kDR)
+
+        EDR = ["uh! :excited:", "Ricooo", "More papi", "stronger!!"]
+        EDRS = random.choice(EDR)
+        #-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
         print('------------------------')
         cmd = input('Do you want to attack? Yes/No: ').lower()
         if 'yes' in cmd:
